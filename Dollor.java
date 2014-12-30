@@ -9,7 +9,7 @@ package sibisoft;
  */
 public class Dollor {
 
-	public int amount;
+	public int amount = 10;
 	
 	public Dollor( int amount ){
 	}
