@@ -19,6 +19,7 @@ public class MoneyTest {
 	@Test
 	public void testEquality(){
 		assertTrue(new Dollor( 5 ).equals( new Dollor( 5 )));
+		assertTrue(new Dollor( 5 ).equals( new Dollor( 6 )));
 	}
 	
 }

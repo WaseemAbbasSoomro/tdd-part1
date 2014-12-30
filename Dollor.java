@@ -20,7 +20,8 @@ public class Dollor {
 	}
 	
 	public boolean equals( Object obj ){
-		return true;
+		Dollor dollor = (Dollor) obj;
+		return amount == dollor.amount;
 	}
 	
 }
