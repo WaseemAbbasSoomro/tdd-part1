@@ -13,7 +13,7 @@ public class Dollor extends Money{
 		this.amount = amount;
 	}
 	
-	public Dollor times( int multiplier ){
+	public Money times( int multiplier ){
 		return new Dollor( amount * multiplier );
 	}
 	
