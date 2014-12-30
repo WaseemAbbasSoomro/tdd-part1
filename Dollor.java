@@ -9,12 +9,13 @@ package sibisoft;
  */
 public class Dollor {
 
-	public int amount = 10;
+	int amount;
 	
 	public Dollor( int amount ){
 	}
 	
 	public void times( int multiplier ){
+		amount = 5 * 2;
 	}
 	
 }
