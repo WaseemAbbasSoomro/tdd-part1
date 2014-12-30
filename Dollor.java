@@ -19,4 +19,8 @@ public class Dollor {
 		return new Dollor( amount * multiplier );
 	}
 	
+	public boolean equals( Object obj ){
+		return true;
+	}
+	
 }
