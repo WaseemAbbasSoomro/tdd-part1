@@ -4,10 +4,8 @@ package sibisoft;
  * @author Waseem Abbas
  *
  */
-public class Franc {
+public class Franc extends Money{
 
-private int amount;
-	
 	public Franc( int amount ){
 		this.amount = amount;
 	}
@@ -16,8 +14,4 @@ private int amount;
 		return new Franc( amount * multiplier );
 	}
 	
-	public boolean equals( Object obj ){
-		Franc franc = (Franc) obj;
-		return amount == franc.amount;
-	}
 }
