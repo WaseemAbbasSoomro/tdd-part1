@@ -9,12 +9,20 @@ package sibisoft;
  */
 public class Dollor extends Money{
 
-	public Dollor( int amount ){
+	private String currency;
+	
+	public Dollor( int amount, String currency ){
 		this.amount = amount;
+		this.currency = currency;
 	}
 	
 	public Money times( int multiplier ){
-		return new Dollor( amount * multiplier );
+		return Money.dollor( amount * multiplier );
+	}
+
+	public String currency() {
+		// TODO Auto-generated method stub
+		return this.currency;
 	}
 	
 }
