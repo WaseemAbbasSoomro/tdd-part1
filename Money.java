@@ -18,12 +18,12 @@ class Money {
 		return amount == money.amount && currency.equals(money.currency());
 	}
 	
-	static Dollor dollor( int amount ){
-		return new Dollor( amount, "USD" );
+	static Money dollor( int amount ){
+		return new Money( amount, "USD" );
 	}
 	
-	static Franc franc( int amount ){
-		return new Franc( amount, "CHF" );
+	static Money franc( int amount ){
+		return new Money( amount, "CHF" );
 	}
 	
 	Money times( int multiplier ){
