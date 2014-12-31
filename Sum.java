@@ -17,6 +17,12 @@ public class Sum implements Expression {
 		this.augend = augend;
 		this.addend = addend;
 	}
+
+	public Money reduce(String to) {
+		// TODO Auto-generated method stub
+		int addition = augend.amount + addend.amount;
+		return new Money( addition,to );
+	}
 	
 
 }
