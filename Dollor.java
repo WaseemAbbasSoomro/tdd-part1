@@ -21,7 +21,7 @@ public class Dollor extends Money{
 
 	public String currency() {
 		// TODO Auto-generated method stub
-		return currency;
+		return super.currency;
 	}
 	
 }

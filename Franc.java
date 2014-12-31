@@ -13,12 +13,12 @@ public class Franc extends Money{
 	}
 	
 	public Money times( int multiplier ){
-		return new Franc( amount * multiplier, currency );
+		return new Money( amount * multiplier, currency );
 	}
 
 	public String currency() {
 		// TODO Auto-generated method stub
-		return currency;
+		return super.currency;
 	}
 	
 }

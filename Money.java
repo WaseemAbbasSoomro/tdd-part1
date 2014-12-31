@@ -15,7 +15,7 @@ class Money {
 	
 	public boolean equals( Object obj ){
 		Money money = (Money) obj;
-		return amount == money.amount && getClass().equals(money.getClass());
+		return amount == money.amount && currency.equals(money.currency());
 	}
 	
 	static Dollor dollor( int amount ){
@@ -28,6 +28,10 @@ class Money {
 	
 	Money times( int multiplier ){
 		return null;
+	}
+	
+	String currency(){
+		return currency;
 	}
 	
 	public String toString(){
