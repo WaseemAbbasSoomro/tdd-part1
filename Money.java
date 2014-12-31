@@ -38,9 +38,9 @@ class Money implements Expression {
 		return amount + " " + currency;
 	}
 
-	public Expression plus(Money dollor) {
+	public Expression plus( Money addend ) {
 		// TODO Auto-generated method stub
-		return new Money( amount + dollor.amount, currency);
+		return new Sum( this, addend );
 	}
 
 }
