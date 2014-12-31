@@ -10,6 +10,8 @@ package sibisoft;
 public class Bank {
 	
 	Money reduce( Expression source, String to){
-		return Money.dollor( 10 );
+		Sum sum = (Sum) source;
+		int addition = sum.augend.amount + sum.addend.amount;
+		return new Money( addition,to );
 	}
 }
