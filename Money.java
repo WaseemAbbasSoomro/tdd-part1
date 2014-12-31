@@ -4,7 +4,7 @@ package sibisoft;
  * @author Waseem Abbas
  *
  */
-class Money {
+class Money implements Expression {
 	protected int amount;
 	protected String currency;
 	
@@ -36,6 +36,11 @@ class Money {
 	
 	public String toString(){
 		return amount + " " + currency;
+	}
+
+	public Expression plus(Money dollor) {
+		// TODO Auto-generated method stub
+		return new Money( amount + dollor.amount, currency);
 	}
 
 }
