@@ -16,7 +16,7 @@ public class Dollor extends Money{
 	}
 	
 	public Money times( int multiplier ){
-		return Money.dollor( amount * multiplier );
+		return new Money( amount * multiplier, currency );
 	}
 
 	public String currency() {
