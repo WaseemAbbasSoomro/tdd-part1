@@ -18,7 +18,7 @@ public class Sum implements Expression {
 		this.addend = addend;
 	}
 
-	public Money reduce(String to) {
+	public Money reduce( Bank bank, String to) {
 		// TODO Auto-generated method stub
 		int addition = augend.amount + addend.amount;
 		return new Money( addition,to );
