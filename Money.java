@@ -29,6 +29,7 @@ class Money {
 	Money times( int multiplier ){
 		return null;
 	}
+	
 	public String toString(){
 		return amount + " " + currency;
 	}
