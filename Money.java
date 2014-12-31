@@ -42,5 +42,9 @@ class Money implements Expression {
 		// TODO Auto-generated method stub
 		return new Sum( this, addend );
 	}
+	
+	public Money reduce( String to ){
+		return this;
+	}
 
 }
