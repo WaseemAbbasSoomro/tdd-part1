@@ -9,10 +9,10 @@ package sibisoft;
  */
 public class Sum implements Expression {
 
-	Money augend;
-	Money addend;
+	Expression augend;
+	Expression addend;
 	
-	public Sum(Money augend, Money addend) {
+	public Sum(Expression augend, Expression addend) {
 		// TODO Auto-generated constructor stub
 		this.augend = augend;
 		this.addend = addend;
@@ -24,5 +24,9 @@ public class Sum implements Expression {
 		return new Money( addition,to );
 	}
 	
+	public Expression plus( Expression addend ) {
+		// TODO Auto-generated method stub
+		return new Sum( this, addend );
+	}
 
 }
