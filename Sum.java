@@ -26,7 +26,7 @@ public class Sum implements Expression {
 	
 	public Expression plus( Expression addend ) {
 		// TODO Auto-generated method stub
-		return new Sum( this, addend );
+		return null;
 	}
 
 }
