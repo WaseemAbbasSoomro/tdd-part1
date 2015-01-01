@@ -20,7 +20,7 @@ public class Sum implements Expression {
 
 	public Money reduce( Bank bank, String to) {
 		// TODO Auto-generated method stub
-		int addition = augend.amount + addend.amount;
+		int addition = augend.reduce(bank, to).amount + addend.reduce(bank, to).amount;
 		return new Money( addition,to );
 	}
 	
